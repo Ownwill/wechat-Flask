@@ -1,0 +1,42 @@
+{
+    "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/person/person"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#A593E0",
+    "navigationBarTitleText": "知北",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#EFFFE9",
+    "backgroundColor": "#566270",
+    "selectedColor": "E0E3DA",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home1.png"
+        
+      },
+      {
+        "text": "列表页",
+        "pagePath": "pages/list/list",
+        "iconPath": "image/list.png",
+        "selectedIconPath": "image/list1.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/person/person",
+        "iconPath": "image/person.png",
+        "selectedIconPath": "image/person1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+  
+}

@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view class="banner_boder">
+  <swiper class="banner_border" autoplay="true" interval="1500" vertical="true" circular="true">
+    <swiper-item>
+      <image src="/image/bar1.jpg" style="width:100%,height:100%;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/bar2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/bar3.jpg"></image>
+    </swiper-item> 
+  </swiper>
+</view>
+
+<!-- //第二次判断 -->
+<view>
+  <view wx:for="{{ article_list }}" wx:for-item="item" class="content" hover-class="content_hover">  
+    
+        <view class="pic_box ">   
+          <image src="{{ item.picture }}">
+          </image>
+        </view>  
+
+        <view class="content_box">
+          <view class="title">          
+            <navigator open-type="reLaunch" url="/pages/list/list?pages='{{index}}'" hover-c lass="navigator-hover">
+              {{ item.title }}
+            </navigator>
+          </view>
+          <text class="description">{{ item.description }}{{index}}</text>
+        </view>
+    
+  </view>
+</view>
+
+
+
+<!-- <view>
+  <view class="content" hover-class="content_hover">
+    
+      <view class="pic_box ">
+        
+        <image src="/image/bar4.jpg">
+          <navigator class="nav1" open-type="switchTab" url="/pages/list/list" hover-class="navigator-hover">
+          </navigator>
+        </image>
+      
+      </view>
+      <view class="content_box">
+        <view class="title">火之影</view>
+        <text class="description">十多年前第四代火影拼尽全力，以自己的生命为代价将“九尾妖狐”封印在了刚 出生的鸣人身上。
+        </text>
+      </view>
+  </view>
+</view>
+
+<view>
+  <view class="content" hover-class="content_hover">
+    <view class="content_box">
+      <view class="title">火之影</view>
+      <text class="description">十多年前第四代火影拼尽全力，以自己的生命为代价将“九尾妖狐”封印在了刚出生的鸣人身上。
+      </text>
+    </view>
+    <view class="pic_box">
+      <image src="/image/bar4.jpg"></image>
+    </view>
+  </view>
+</view>
+
+<view>
+  <view class="content" hover-class="content_hover">
+    <view class="pic_box">
+    <image src="/image/bar4.jpg"></image>
+    </view>
+    <view class="content_box">
+      <view class="title">火之影</view>
+      <text class="description">十多年前第四代火影拼尽全力，以自己的生命为代价将“九尾妖狐”封印在了刚出生的鸣人身上。
+      </text>
+    </view>
+  </view>
+</view>
+
+
+<view>
+  <view class="content" hover-class="content_hover">
+    <view class="content_box">
+      <view class="title">火之影</view>
+      <text class="description">十多年前第四代火影拼尽全力，以自己的生命为代价将“九尾妖狐”封印在了刚出生的鸣人身上。
+      </text>
+    </view>
+    <view class="pic_box">
+      <image src="/image/bar4.jpg"></image>
+    </view>
+  </view>
+</view> -->
